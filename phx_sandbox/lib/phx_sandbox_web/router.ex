@@ -18,6 +18,7 @@ defmodule PhxSandboxWeb.Router do
 
     get "/", PageController, :index
     get "/test", TestController, :index
+    get "/test/:arg", TestController, :show
   end
 
   # Other scopes may use custom stacks.
