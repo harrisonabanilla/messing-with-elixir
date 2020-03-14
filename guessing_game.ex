@@ -1,11 +1,5 @@
 defmodule GuessingGame do
-  # guess between min and max -> guess middle number
-  # tell user guess
-  # "yes" -> end game
-  # "bigger" bigger(lwo, high)
-  # "smaller" -> smaller(low, high)
-  # anything else -> invalid response
-
+  def guess(a, b) when a > b, do: guess(b, a)
   def guess(low, high) do
     response = IO.gets "are you thinking of #{mid(low, high)}?\n"
     case String.trim response do
