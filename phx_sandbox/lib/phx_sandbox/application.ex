@@ -14,6 +14,7 @@ defmodule PhxSandbox.Application do
       PhxSandboxWeb.Endpoint
       # Starts a worker by calling: PhxSandbox.Worker.start_link(arg)
       # {PhxSandbox.Worker, arg},
+      PhxSandboxWeb.Presence
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
