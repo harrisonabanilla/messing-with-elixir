@@ -11,10 +11,10 @@ defmodule PhxSandbox.Application do
       # Start the Ecto repository
       PhxSandbox.Repo,
       # Start the endpoint when the application starts
-      PhxSandboxWeb.Endpoint
+      PhxSandboxWeb.Endpoint,
+      PhxSandboxWeb.Presence
       # Starts a worker by calling: PhxSandbox.Worker.start_link(arg)
       # {PhxSandbox.Worker, arg},
-      PhxSandboxWeb.Presence
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

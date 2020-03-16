@@ -1,6 +1,6 @@
 defmodule PhxSandbox.RoomChannel do
-  use PhxSandbox.Web, :channel
-  alias PhsSandbox.Presence
+  use PhxSandboxWeb, :channel
+  alias PhxSandboxWeb.Presence
 
   def join("room:lobby", _, socket) do
     send self(), :after_join 
