@@ -1,5 +1,7 @@
 defmodule FizzBuzz do
-
+  def calculate_fb(a,b) when a > b do
+    calculate_fb(b,a)
+  end
   def calculate_fb(number, max) do
     cond do
       rem(number, 15) == 0 -> 
